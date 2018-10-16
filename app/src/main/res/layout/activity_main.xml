@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_liveness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活体检测" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人脸注册" />
+
+
+    <Button
+        android:id="@+id/btn_recognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人脸验证" />
+
+
+    <Button
+        android:id="@+id/btn_idCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人证对比" />
+
+
+    <Button
+        android:id="@+id/btn_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片识别" />
+
+
+</LinearLayout>
