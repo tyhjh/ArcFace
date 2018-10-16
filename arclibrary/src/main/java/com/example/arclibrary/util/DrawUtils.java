@@ -19,16 +19,14 @@ public class DrawUtils {
             previewHeight = previewWidth;
             previewWidth = t;
         }
-
-
         float widthRatio = (float) canvasWidth / (float) previewWidth;
         float heightRatio = (float) canvasHeight / (float) previewHeight;
 
         if (cameraOri == 0 || cameraOri == 180 ){
-            rect.left *= heightRatio;
-            rect.right *= heightRatio;
-            rect.top *= widthRatio;
-            rect.bottom *= widthRatio;
+            rect.left *= widthRatio;
+            rect.right *= widthRatio;
+            rect.top *= heightRatio;
+            rect.bottom *= heightRatio;
         }else {
             rect.left *= widthRatio;
             rect.right *= widthRatio;
@@ -41,8 +39,8 @@ public class DrawUtils {
         switch (cameraOri) {
             case 0:
                 if (mCameraId == Camera.CameraInfo.CAMERA_FACING_FRONT) {
-                    newRect.left = canvasWidth - rect.left;
-                    newRect.right = canvasWidth - rect.right;
+                    newRect.right = canvasWidth - rect.left;
+                    newRect.left = canvasWidth - rect.right;
                 } else {
                     newRect.left = rect.left;
                     newRect.right = rect.right;

@@ -134,7 +134,7 @@ public class ArcFaceCamera implements SurfaceHolder.Callback {
                     if (rect != null) {
                         //画人脸框
                         Rect adjustedRect = DrawUtils.adjustRect(rect, faceTrackService.getWidth(), faceTrackService.getHeight(),
-                                canvas.getWidth(), canvas.getHeight(), cameraOri, 1);
+                                canvas.getWidth(), canvas.getHeight(), cameraOri, cameraId);
                         DrawUtils.drawFaceRect(canvas, adjustedRect, Color.YELLOW, 4);
 
                         Rect rect1=DrawUtils.adjustRect(rect, previewSizeX, previewSizeY,
